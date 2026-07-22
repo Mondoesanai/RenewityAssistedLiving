@@ -43,6 +43,30 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
   revealEls.forEach(el => io.observe(el));
 
+  /* count-up stats */
+  const counters = document.querySelectorAll('[data-count]');
+  const countIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseFloat(el.dataset.count);
+      const suffix = el.dataset.suffix || '';
+      const prefix = el.dataset.prefix || '';
+      const dur = 1500;
+      const start = performance.now();
+      const tick = (now) => {
+        const p = Math.min((now - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        const val = Math.round(target * eased);
+        el.textContent = prefix + val + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      countIO.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(el => countIO.observe(el));
+
   /* accordion (FAQ) */
   document.querySelectorAll('.acc-head').forEach(head => {
     head.addEventListener('click', () => {
@@ -63,5 +87,15 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.style.pointerEvents = 'none';
     setTimeout(() => { btn.textContent = original; btn.style.pointerEvents = ''; form.reset(); }, 2600);
   });
+
+  /* comments character counter (contact page) */
+  const comments = document.getElementById('comments');
+  const counter = document.getElementById('comments-count');
+  if (comments && counter) {
+    const max = comments.getAttribute('maxlength') || 600;
+    const update = () => counter.textContent = `${comments.value.length} of ${max} max characters`;
+    comments.addEventListener('input', update);
+    update();
+  }
 
 });

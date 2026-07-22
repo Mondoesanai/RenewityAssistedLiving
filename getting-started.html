@@ -8,7 +8,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -25,33 +25,35 @@
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="our-home.html">Our Home</a>
-      <a href="care.html">Care &amp; Services</a>
-      <a href="getting-started.html" class="active">Getting Started</a>
+      <a href="care.html">Life with Renewity</a>
+      <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <a href="contact.html" class="btn btn-primary hidden lg:inline-flex">Schedule a Visit</a>
+    <div class="flex items-center gap-3">
+      <a href="realtor-partners.html" class="nav-pill hide-mobile hidden md:inline-flex">Realtor Info</a>
+      <a href="care.html#memory-care" class="nav-pill hide-mobile hidden md:inline-flex">Memory Care</a>
+      <a href="contact.html" class="btn btn-primary hidden lg:inline-flex">Schedule a Tour</a>
+    </div>
     <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 <div class="mobile-panel">
   <a href="index.html">Home</a>
   <a href="our-home.html">Our Home</a>
-  <a href="care.html">Care &amp; Services</a>
-  <a href="getting-started.html">Getting Started</a>
+  <a href="care.html">Life with Renewity</a>
+  <a href="blog.html">Blog</a>
   <a href="contact.html">Contact</a>
+  <a href="realtor-partners.html" class="mp-pill">Realtor Information</a>
+  <a href="care.html#memory-care" class="mp-pill">Ask About Memory Care</a>
 </div>
 
 <!-- PAGE HERO -->
-<section class="relative pt-44 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 overflow-hidden">
-  <div class="absolute inset-0">
-    <img src="https://placehold.co/2000x900/e9dbc0/e9dbc0" alt="" class="w-full h-full object-cover" />
-    <div class="absolute inset-0" style="background:rgba(251,246,236,.86);"></div>
-  </div>
+<section class="relative pt-44 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 overflow-hidden" style="background:var(--cream-alt);">
   <div class="relative z-10 max-w-[1280px] mx-auto reveal">
     <p class="eyebrow">Getting Started</p>
-    <h1 class="font-display font-medium mt-6 leading-tight" style="font-size:clamp(2.2rem,5vw,4rem);max-width:16ch;">Moving a parent into care is hard. Getting started here shouldn't be.</h1>
+    <h1 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2.2rem,5vw,4rem);max-width:16ch;">Moving a parent into care is hard. Getting started here shouldn't be.</h1>
     <p class="mt-6 max-w-xl leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
-      No sales scripts, no pressure. Just a clear path from your first phone call to move-in day.
+      No sales scripts, no pressure. Just a clear path from your first phone call to move-in day — and we are open for tours right now.
     </p>
   </div>
 </section>
@@ -62,35 +64,35 @@
     <div class="step-row reveal">
       <span class="step-num">01</span>
       <div>
-        <h3 class="font-display text-xl font-medium">Reach out &amp; talk it through</h3>
+        <h3 class="font-display text-xl font-semibold">Reach out &amp; talk it through</h3>
         <p class="mt-2 leading-relaxed" style="color:var(--ink-soft);">Call or send us a message. We'll ask about your loved one's needs, routines, and personality — and answer your questions honestly, including on cost.</p>
       </div>
     </div>
     <div class="step-row reveal d1">
       <span class="step-num">02</span>
       <div>
-        <h3 class="font-display text-xl font-medium">Tour the home</h3>
+        <h3 class="font-display text-xl font-semibold">Tour the home</h3>
         <p class="mt-2 leading-relaxed" style="color:var(--ink-soft);">Walk through Renewity in person, meet the caregivers, and see exactly what a typical day looks like. Bring your loved one along if they're able.</p>
       </div>
     </div>
     <div class="step-row reveal d2">
       <span class="step-num">03</span>
       <div>
-        <h3 class="font-display text-xl font-medium">Share health &amp; care information</h3>
-        <p class="mt-2 leading-relaxed" style="color:var(--ink-soft);">We'll ask for a basic health history and physician information so we can build a personalized care plan — nothing more invasive than needed.</p>
+        <h3 class="font-display text-xl font-semibold">Share health &amp; care information</h3>
+        <p class="mt-2 leading-relaxed" style="color:var(--ink-soft);">We'll ask for a basic health history and physician information so our care coordinators can build a personalized care plan — nothing more invasive than needed.</p>
       </div>
     </div>
     <div class="step-row reveal d3">
       <span class="step-num">04</span>
       <div>
-        <h3 class="font-display text-xl font-medium">Plan the paperwork &amp; move-in date</h3>
+        <h3 class="font-display text-xl font-semibold">Plan the paperwork &amp; move-in date</h3>
         <p class="mt-2 leading-relaxed" style="color:var(--ink-soft);">We'll walk you through agreements and logistics together, and set a move-in date that works for your family's timeline.</p>
       </div>
     </div>
     <div class="step-row reveal d4">
       <span class="step-num">05</span>
       <div>
-        <h3 class="font-display text-xl font-medium">Welcome home</h3>
+        <h3 class="font-display text-xl font-semibold">Welcome home</h3>
         <p class="mt-2 leading-relaxed" style="color:var(--ink-soft);">We help your loved one settle in with familiar belongings and get introduced to their new routine, neighbors, and caregivers.</p>
       </div>
     </div>
@@ -102,7 +104,7 @@
   <div class="max-w-[820px] mx-auto">
     <div class="mb-10 reveal">
       <p class="eyebrow">Before You Call</p>
-      <h2 class="font-display font-medium mt-6 leading-tight" style="font-size:clamp(1.9rem,3.4vw,2.6rem);">A few things families usually ask.</h2>
+      <h2 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(1.9rem,3.4vw,2.6rem);">A few things families usually ask.</h2>
     </div>
     <div class="reveal d1">
       <div class="acc-item open">
@@ -115,11 +117,11 @@
       </div>
       <div class="acc-item">
         <button class="acc-head"><span>Can we visit before deciding?</span><span class="acc-icon"></span></button>
-        <div class="acc-body"><p>Always. We encourage every family to tour in person, meet the caregivers, and ask as many questions as they need before making a decision.</p></div>
+        <div class="acc-body"><p>Always. We're open for tours and encourage every family to tour in person, meet the caregivers, and ask as many questions as they need before making a decision.</p></div>
       </div>
       <div class="acc-item">
         <button class="acc-head"><span>What does it cost?</span><span class="acc-icon"></span></button>
-        <div class="acc-body"><p>Costs depend on the level of care needed. We'll walk through pricing plainly and honestly during your first conversation — no hidden fees, no surprises later.</p></div>
+        <div class="acc-body"><p>Costs depend on the level of care needed. We'll walk through pricing plainly and honestly during your first conversation — no hidden fees, no surprises later. Short-term and respite stays are also available.</p></div>
       </div>
     </div>
   </div>
@@ -128,12 +130,12 @@
 <!-- CTA -->
 <section class="relative px-6 md:px-12 py-28 md:py-36 overflow-hidden">
   <div class="absolute inset-0">
-    <img src="https://placehold.co/1800x1000/8a6a52/8a6a52" alt="" class="w-full h-full object-cover" />
-    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(42,33,25,.88),rgba(42,33,25,.8));"></div>
+    <img src="https://placehold.co/1800x1000/124e8e/124e8e" alt="" class="w-full h-full object-cover" />
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.88),rgba(14,27,41,.8));"></div>
   </div>
   <div class="relative z-10 max-w-2xl mx-auto text-center reveal">
     <p class="eyebrow on-dark center justify-center">Ready When You Are</p>
-    <h2 class="font-display font-medium mt-6 leading-tight" style="color:var(--paper);font-size:clamp(2rem,4.2vw,3.2rem);">Let's take the first step together.</h2>
+    <h2 class="font-display font-semibold mt-6 leading-tight" style="color:var(--paper);font-size:clamp(2rem,4.2vw,3.2rem);">Let's take the first step together.</h2>
     <div class="mt-10 flex flex-wrap items-center justify-center gap-5">
       <a href="contact.html" class="btn btn-primary">Contact Us</a>
       <a href="tel:8127251660" class="btn btn-ghost">Call (812) 725-1660</a>
@@ -142,25 +144,26 @@
 </section>
 
 <!-- FOOTER -->
-<footer style="background:var(--dusk);color:rgba(251,246,236,.7);">
+<footer style="background:var(--navy-dark);color:rgba(246,250,254,.7);">
   <div class="max-w-[1280px] mx-auto px-6 md:px-12 pt-20 pb-10 grid md:grid-cols-12 gap-12">
     <div class="md:col-span-4">
-      <p class="font-display" style="color:var(--paper);font-size:1.5rem;">Renewity</p>
+      <p class="font-display font-semibold" style="color:var(--paper);font-size:1.5rem;">Renewity</p>
       <p class="eyebrow on-dark mt-2">Residential Care Home for Seniors</p>
-      <p class="mt-6 text-sm leading-relaxed max-w-xs">A small, home-like residential care home in New Albany, Indiana — renewing life, one day at a time.</p>
+      <p class="mt-6 text-sm leading-relaxed max-w-xs">Brand-new, all-inclusive senior living in New Albany, Indiana — renewing life and redefining the standards of care.</p>
     </div>
     <div class="md:col-span-2 md:col-start-6">
-      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--tan);">Explore</p>
+      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--sky);">Explore</p>
       <ul class="space-y-3 text-sm">
         <li><a href="index.html" style="opacity:.85;">Home</a></li>
         <li><a href="our-home.html" style="opacity:.85;">Our Home</a></li>
-        <li><a href="care.html" style="opacity:.85;">Care &amp; Services</a></li>
-        <li><a href="getting-started.html" style="opacity:.85;">Getting Started</a></li>
+        <li><a href="care.html" style="opacity:.85;">Life with Renewity</a></li>
+        <li><a href="blog.html" style="opacity:.85;">Blog</a></li>
         <li><a href="contact.html" style="opacity:.85;">Contact</a></li>
+        <li><a href="realtor-partners.html" style="opacity:.85;">Realtor Information</a></li>
       </ul>
     </div>
     <div class="md:col-span-3">
-      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--tan);">Contact</p>
+      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--sky);">Contact</p>
       <ul class="space-y-3 text-sm" style="opacity:.9;">
         <li>(812) 725-1660</li>
         <li>michele@renewityassistedliving.com</li>
@@ -168,9 +171,9 @@
       </ul>
     </div>
   </div>
-  <div class="max-w-[1280px] mx-auto px-6 md:px-12 py-6 border-t flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style="border-color:rgba(251,246,236,.12);opacity:.55;">
+  <div class="max-w-[1280px] mx-auto px-6 md:px-12 py-6 border-t flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style="border-color:rgba(246,250,254,.12);opacity:.55;">
     <p>&copy; 2026 Renewity Residential Care Home for Seniors. All rights reserved.</p>
-    <p>A Residential Care Home — Not a Skilled Nursing Facility</p>
+    <p>Home-Style Assisted Living — Not a Skilled Nursing Facility</p>
   </div>
 </footer>
 

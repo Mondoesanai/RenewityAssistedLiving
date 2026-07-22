@@ -4,11 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Renewity Residential Care Home for Seniors | New Albany, IN</title>
-<meta name="description" content="Renewity is a residential care home for seniors in New Albany, Indiana — a real home, not an institution, where caregivers know every resident by name." />
+<meta name="description" content="Renewity is a home-style assisted living community in New Albany, Indiana — 20 residents, a 5:1 caregiver ratio, and a place that truly feels like home." />
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -25,175 +25,200 @@
     <nav class="nav-links">
       <a href="index.html" class="active">Home</a>
       <a href="our-home.html">Our Home</a>
-      <a href="care.html">Care &amp; Services</a>
-      <a href="getting-started.html">Getting Started</a>
+      <a href="care.html">Life with Renewity</a>
+      <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <a href="contact.html" class="btn btn-primary hidden lg:inline-flex">Schedule a Visit</a>
+    <div class="flex items-center gap-3">
+      <a href="realtor-partners.html" class="nav-pill hide-mobile hidden md:inline-flex">Realtor Info</a>
+      <a href="care.html#memory-care" class="nav-pill hide-mobile hidden md:inline-flex">Memory Care</a>
+      <a href="contact.html" class="btn btn-primary hidden lg:inline-flex">Schedule a Tour</a>
+    </div>
     <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 <div class="mobile-panel">
   <a href="index.html">Home</a>
   <a href="our-home.html">Our Home</a>
-  <a href="care.html">Care &amp; Services</a>
-  <a href="getting-started.html">Getting Started</a>
+  <a href="care.html">Life with Renewity</a>
+  <a href="blog.html">Blog</a>
   <a href="contact.html">Contact</a>
+  <a href="realtor-partners.html" class="mp-pill">Realtor Information</a>
+  <a href="care.html#memory-care" class="mp-pill">Ask About Memory Care</a>
 </div>
 
 <!-- HERO -->
 <section class="relative min-h-screen flex items-end overflow-hidden">
-  <div class="absolute inset-0">
-    <img src="https://placehold.co/2000x1300/8a6a52/8a6a52" alt="The Renewity residential care home — photo coming soon" class="w-full h-full object-cover" />
-    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(42,33,25,.6) 0%,rgba(42,33,25,.28) 40%,rgba(42,33,25,.8) 100%);"></div>
+  <div class="hero-media">
+    <video autoplay muted loop playsinline poster="https://placehold.co/2000x1300/1a6fc4/1a6fc4">
+      <source src="assets/hero-video.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.55) 0%,rgba(14,27,41,.3) 40%,rgba(14,27,41,.82) 100%);"></div>
   </div>
 
   <div class="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-12 pb-20 md:pb-28 pt-40">
-    <p class="eyebrow on-dark reveal">New Albany, Indiana</p>
-    <h1 class="reveal d1 mt-6 font-display font-medium leading-[1.04] tracking-tight" style="color:var(--paper);font-size:clamp(2.6rem,6.6vw,5.4rem);">
-      A home, first.<br/>
-      <em class="font-medium" style="color:var(--tan);">Care, always.</em>
+    <div class="reveal mb-8">
+      <img src="assets/badge-assisted-living-magazine.png" alt="Best in Senior Living — Assisted Living Magazine award badge" class="award-seal" />
+    </div>
+    <p class="eyebrow on-dark reveal d1">New Albany, Indiana</p>
+    <h1 class="reveal d2 mt-6 font-display font-semibold leading-[1.02] tracking-tight" style="color:var(--paper);font-size:clamp(2.6rem,6.6vw,5.2rem);">
+      Welcome to Renewity<br/>
+      <em class="font-semibold not-italic" style="color:var(--sky);">Residential Care Home for Seniors</em>
     </h1>
-    <p class="reveal d2 mt-8 max-w-xl text-base md:text-lg leading-relaxed" style="color:rgba(251,246,236,.86);">
-      Renewity is a residential care home for seniors — a small, family-style home where the people caring for your loved one actually know their name, their story, and their morning routine. Not a wing. Not a facility. A home.
+    <p class="reveal d3 mt-8 max-w-xl text-base md:text-lg leading-relaxed" style="color:rgba(246,250,254,.88);">
+      Renewity emerged from a simple conviction: our aging loved ones deserve to be nurtured and cherished, not processed through a system. This is home-style assisted living — small, personal, and built entirely around you.
     </p>
-    <div class="reveal d3 mt-10 flex flex-wrap items-center gap-5">
-      <a href="contact.html" class="btn btn-primary">Schedule a Visit</a>
-      <a href="our-home.html" class="btn btn-ghost">See Our Home</a>
+    <div class="reveal d4 mt-10 flex flex-wrap items-center gap-4">
+      <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
+      <a href="realtor-partners.html" class="btn btn-ghost">Realtor Information</a>
+      <a href="care.html#memory-care" class="btn btn-ghost">Ask About Memory Care</a>
     </div>
   </div>
 </section>
 
-<!-- TRUST STRIP -->
-<section class="px-6 md:px-12 py-10 md:py-14" style="background:var(--dusk);">
-  <div class="max-w-[1280px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6 text-center reveal">
+<!-- STATS STRIP -->
+<section class="px-6 md:px-12 py-14 md:py-16" style="background:var(--navy-dark);">
+  <div class="max-w-[1280px] mx-auto grid grid-cols-3 gap-6 md:gap-10 text-center reveal">
     <div>
-      <svg viewBox="0 0 24 24" fill="none" stroke="var(--tan)" stroke-width="1.5" class="mx-auto mb-3" style="width:26px;height:26px;"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9"/></svg>
-      <p class="text-xs md:text-sm tracking-wide" style="color:rgba(251,246,236,.82);">A real home,<br/>not an institution</p>
+      <span class="stat-num" data-count="20" data-suffix="">20</span>
+      <p class="stat-label">Residents — By Design</p>
     </div>
     <div>
-      <svg viewBox="0 0 24 24" fill="none" stroke="var(--tan)" stroke-width="1.5" class="mx-auto mb-3" style="width:26px;height:26px;"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-      <p class="text-xs md:text-sm tracking-wide" style="color:rgba(251,246,236,.82);">Someone awake<br/>and present, day &amp; night</p>
+      <span class="stat-num" data-count="5" data-suffix=":1">5:1</span>
+      <p class="stat-label">Resident-to-Caregiver Ratio</p>
     </div>
     <div>
-      <svg viewBox="0 0 24 24" fill="none" stroke="var(--tan)" stroke-width="1.5" class="mx-auto mb-3" style="width:26px;height:26px;"><path d="M12 3c2 3 5 4 5 8a5 5 0 0 1-10 0c0-4 3-5 5-8Z"/></svg>
-      <p class="text-xs md:text-sm tracking-wide" style="color:rgba(251,246,236,.82);">Home-cooked meals,<br/>every day</p>
-    </div>
-    <div>
-      <svg viewBox="0 0 24 24" fill="none" stroke="var(--tan)" stroke-width="1.5" class="mx-auto mb-3" style="width:26px;height:26px;"><path d="M4 4h16v12H7l-3 4V4Z"/></svg>
-      <p class="text-xs md:text-sm tracking-wide" style="color:rgba(251,246,236,.82);">Honest, direct<br/>family communication</p>
+      <span class="stat-num" data-count="24" data-suffix="/7">24/7</span>
+      <p class="stat-label">Awake, Present Caregivers</p>
     </div>
   </div>
 </section>
 
-<!-- NOT A NURSING HOME -->
+<!-- MISSION -->
 <section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);">
   <div class="max-w-[1280px] mx-auto grid md:grid-cols-12 gap-12 items-center">
     <div class="md:col-span-5 reveal">
-      <div class="relative">
-        <img src="https://placehold.co/900x1100/e9dbc0/6e6255?text=Living+Room" alt="A shared living room at Renewity" class="w-full aspect-[4/5] object-cover" />
-        <div class="absolute -bottom-6 -right-6 p-6 md:p-7 hidden sm:block" style="background:var(--sage-deep);color:var(--paper);box-shadow:var(--shadow-card);max-width:250px;">
-          <p class="font-display italic text-base leading-snug">&ldquo;Residents deserve to be known, not just monitored.&rdquo;</p>
-        </div>
-      </div>
+      <img src="https://placehold.co/900x1100/1a6fc4/1a6fc4" alt="A Renewity caregiver with a resident" class="w-full aspect-[4/5] object-cover rounded-2xl" />
     </div>
     <div class="md:col-span-6 md:col-start-7 reveal d1">
-      <p class="eyebrow">What We're Not</p>
-      <h2 class="font-display font-medium mt-6 leading-tight" style="font-size:clamp(1.9rem,3.4vw,2.9rem);">
-        This isn't a nursing home.<br/><em class="font-medium" style="color:var(--clay-deep);">It's a residential care home.</em>
-      </h2>
+      <p class="eyebrow">Our Mission</p>
+      <h2 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(1.9rem,3.4vw,2.9rem);">Renewing life. Redefining care.</h2>
       <p class="mt-6 leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
-        Renewity is a residential care home for seniors — licensed to support daily living, not a skilled nursing or rehabilitation facility. That distinction matters. It means help with dressing, bathing, meals, and medication reminders, delivered in an actual house on a real street, by caregivers who live in the community, not a clinical unit run on shift changes.
+        Renewity was founded on one conviction: aging loved ones deserve to be nurtured and cherished, not managed. As the years unfold, health can wane and roles within a family can shift — but every day still holds new hope. That transition away from full independence shouldn't mean losing dignity, choice, or comfort.
       </p>
-      <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div class="value-card">
-          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <p class="font-semibold text-sm">Assistance with daily living</p>
-          <p class="text-sm mt-1" style="color:var(--ink-faint);">Not intensive medical or rehab care</p>
-        </div>
-        <div class="value-card">
-          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6 9 17l-5-5"/></svg></div>
-          <p class="font-semibold text-sm">A house, on a street</p>
-          <p class="text-sm mt-1" style="color:var(--ink-faint);">Not a hospital-style building</p>
-        </div>
-      </div>
-      <a href="care.html" class="inline-flex items-center gap-3 mt-10 group">
-        <span class="text-sm font-semibold tracking-wide" style="border-bottom:1px solid var(--clay);padding-bottom:2px;">Read the full difference</span>
+      <p class="mt-4 leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
+        We offer a sanctuary of safety, warmth, and love for seniors who need help with daily activities — from dining and bathing to staying mobile — where compassion and respect run through every interaction. Renewity is where you'll find not just excellent care, but a true sense of belonging.
+      </p>
+      <a href="our-home.html" class="inline-flex items-center gap-3 mt-8 group">
+        <span class="text-sm font-semibold tracking-wide" style="border-bottom:1px solid var(--blue);padding-bottom:2px;">Read Our Full Story</span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- CARE PREVIEW -->
-<section class="px-6 md:px-12" style="padding-bottom:var(--section-pad);background:var(--cream-alt);padding-top:var(--section-pad);">
+<!-- WHY RENEWITY -->
+<section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);background:var(--cream-alt);">
+  <div class="max-w-[1280px] mx-auto">
+    <div class="mb-14 reveal max-w-2xl">
+      <p class="eyebrow">Why Renewity?</p>
+      <h2 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2rem,3.8vw,3.2rem);">A home-style ratio, not a facility-sized one.</h2>
+      <p class="mt-4 leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
+        Renewity maintains a resident-to-caregiver ratio of about 5:1 — as few as four residents per caregiver at any time. Compare that to the roughly 20:1 ratio common in larger, facility-based communities. That smaller number is the whole difference: personalized attention, stronger relationships, and caregivers who actually know your preferences and routines.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="service-card card-lift reveal">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M2 20c0-3.3 2.8-5.5 7-5.5s7 2.2 7 5.5"/></svg></div>
+        <h3>Personalized Attention</h3>
+        <p>A low ratio means caregivers have real time with each resident — not a checklist rushed between rooms.</p>
+      </div>
+      <div class="service-card card-lift reveal d1">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg></div>
+        <h3>Daily Social &amp; Cognitive Support</h3>
+        <p>A diverse mix of daily activities builds social, emotional, and cognitive engagement, day after day.</p>
+      </div>
+      <div class="service-card card-lift reveal d2">
+        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v12H7l-3 4V4Z"/></svg></div>
+        <h3>Transparent Family Communication</h3>
+        <p>We keep families informed about health and well-being — proactively, not just when something changes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OPEN FOR TOURS CTA -->
+<section class="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://placehold.co/1800x1000/124e8e/124e8e" alt="" class="w-full h-full object-cover" />
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.88),rgba(14,27,41,.8));"></div>
+  </div>
+  <div class="relative z-10 max-w-3xl mx-auto text-center reveal">
+    <p class="eyebrow on-dark center justify-center">We Are Open for Tours</p>
+    <h2 class="font-display font-semibold mt-6 leading-tight" style="color:var(--paper);font-size:clamp(2rem,4.2vw,3.2rem);">Brand-new, all-inclusive senior living — redefined.</h2>
+    <p class="mt-6" style="color:rgba(246,250,254,.82);">Our 20-bed home helps residents live a life they love. Care coordinators assist with everyday activities of daily living in a space that genuinely feels — and smells — like home. Short-term and respite stays are also available.</p>
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-5">
+      <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
+      <a href="care.html" class="btn btn-ghost">Explore Life with Renewity</a>
+    </div>
+  </div>
+</section>
+
+<!-- DINING / ACTIVITIES / FAMILY ACCESS -->
+<section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);">
+  <div class="max-w-[1280px] mx-auto">
+    <div class="mb-14 reveal max-w-xl">
+      <p class="eyebrow">A Day in the Life</p>
+      <h2 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2rem,3.8vw,3.2rem);">Dining, activities, and family — every day.</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="reveal">
+        <div class="icon-wrap" style="width:52px;height:52px;border-radius:50%;background:var(--blue-pale);display:flex;align-items:center;justify-content:center;color:var(--blue-deep);margin-bottom:1.2rem;"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c2 3 5 4 5 8a5 5 0 0 1-10 0c0-4 3-5 5-8Z"/></svg></div>
+        <h3 class="font-display font-semibold text-lg">Dining</h3>
+        <p class="mt-2 text-sm leading-relaxed" style="color:var(--ink-soft);">Delicious, home-cooked meals served in our bright, open dining room — prepared fresh in our full-size kitchen around each resident's preferences and health needs. Caregivers are attentive around the clock with refreshments and snacks.</p>
+      </div>
+      <div class="reveal d1">
+        <div class="icon-wrap" style="width:52px;height:52px;border-radius:50%;background:var(--blue-pale);display:flex;align-items:center;justify-content:center;color:var(--blue-deep);margin-bottom:1.2rem;"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></div>
+        <h3 class="font-display font-semibold text-lg">Activities</h3>
+        <p class="mt-2 text-sm leading-relaxed" style="color:var(--ink-soft);">Renewity features the Tovertafel®, a leading interactive gaming system for complex and differentiated care needs — plus regular hairdresser and nail visits, chair exercise, movies, music, crafts, and holiday celebrations, all tailored to our small community.</p>
+      </div>
+      <div class="reveal d2">
+        <div class="icon-wrap" style="width:52px;height:52px;border-radius:50%;background:var(--blue-pale);display:flex;align-items:center;justify-content:center;color:var(--blue-deep);margin-bottom:1.2rem;"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l2-7 4 14 2-7h6"/></svg></div>
+        <h3 class="font-display font-semibold text-lg">Family Access</h3>
+        <p class="mt-2 text-sm leading-relaxed" style="color:var(--ink-soft);">As a resident, Renewity is your home — so family is encouraged to visit often. We make accommodations for family to share meals and join daily activities, all part of making everyone feel comfortable and welcome.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG TEASER -->
+<section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);background:var(--cream-alt);">
   <div class="max-w-[1280px] mx-auto">
     <div class="flex flex-wrap items-end justify-between gap-6 mb-14 reveal">
       <div>
-        <p class="eyebrow">Care &amp; Services</p>
-        <h2 class="font-display font-medium mt-6 leading-tight" style="font-size:clamp(2rem,3.8vw,3.2rem);">Everyday care, done with dignity.</h2>
+        <p class="eyebrow">From the Blog</p>
+        <h2 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2rem,3.8vw,3.2rem);">Straight talk on senior care.</h2>
       </div>
-      <a href="care.html" class="btn btn-outline">View All Care &amp; Services</a>
+      <a href="blog.html" class="btn btn-outline">Visit the Blog</a>
     </div>
-
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="service-card card-lift reveal">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21c-4.4-2.8-8-6.3-8-10.5A5.5 5.5 0 0 1 12 7a5.5 5.5 0 0 1 8 3.5C20 14.7 16.4 18.2 12 21Z"/></svg></div>
-        <h3>Personal Care</h3>
-        <p>Bathing, dressing, grooming, and medication reminders — with patience, privacy, and respect.</p>
-      </div>
-      <div class="service-card card-lift reveal d1">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M5 21c0-3.9 3.1-6 7-6s7 2.1 7 6"/></svg></div>
-        <h3>Memory Care</h3>
-        <p>A calm, familiar routine and specially trained caregivers for residents living with Alzheimer's or dementia.</p>
-      </div>
-      <div class="service-card card-lift reveal d2">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c2 3 5 4 5 8a5 5 0 0 1-10 0c0-4 3-5 5-8Z"/></svg></div>
-        <h3>Home-Cooked Nutrition</h3>
-        <p>Fresh meals prepared in the home's own kitchen, built around each resident's tastes and needs.</p>
-      </div>
-      <div class="service-card card-lift reveal">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg></div>
-        <h3>Daily Activities</h3>
-        <p>Games, music, gardening, and conversation — a rhythm to the day, not just a schedule of tasks.</p>
-      </div>
-      <div class="service-card card-lift reveal d1">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
-        <h3>Awake Overnight Care</h3>
-        <p>A caregiver is present and awake around the clock — not on-call, not asleep down the hall.</p>
-      </div>
-      <div class="service-card card-lift reveal d2">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg></div>
-        <h3>Housekeeping &amp; Laundry</h3>
-        <p>A clean, comfortable home maintained every day, so families never have to ask.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- A DAY AT RENEWITY -->
-<section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);">
-  <div class="max-w-[1280px] mx-auto grid md:grid-cols-12 gap-12 items-center">
-    <div class="md:col-span-6 reveal">
-      <p class="eyebrow">A Day at Renewity</p>
-      <h2 class="font-display font-medium mt-6 leading-tight" style="font-size:clamp(1.9rem,3.4vw,2.9rem);">Ordinary moments, protected.</h2>
-      <p class="mt-6 leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
-        The coffee made just the way someone likes it. The chair by the window. A card game after lunch. Days at Renewity aren't run on an institutional clock — they follow the resident, with caregivers who are around long enough to learn the small things that make a house feel like home.
-      </p>
-      <p class="mt-4 leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
-        Families are welcome any time, and kept in the loop always — not just when something goes wrong.
-      </p>
-      <a href="our-home.html" class="inline-flex items-center gap-3 mt-8 group">
-        <span class="text-sm font-semibold tracking-wide" style="border-bottom:1px solid var(--clay);padding-bottom:2px;">Learn about Our Home</span>
+      <a href="blog-facility-vs-home.html" class="blog-card card-lift reveal">
+        <div class="thumb"><img src="https://placehold.co/700x440/1a6fc4/1a6fc4" alt="" /></div>
+        <div class="body"><p class="tag">Choosing Care</p><h3>Facility vs. Home Assisted Living Services</h3><p>Why a 5:1 ratio changes everything compared to the ~20:1 average at larger communities.</p></div>
       </a>
-    </div>
-    <div class="md:col-span-5 md:col-start-8 reveal d1">
-      <img src="https://placehold.co/800x900/d9ae72/2b241e?text=Shared+Meals" alt="Residents sharing a meal at Renewity" class="w-full aspect-[4/5] object-cover" />
+      <a href="blog-renewity-difference.html" class="blog-card card-lift reveal d1">
+        <div class="thumb"><img src="https://placehold.co/700x440/124e8e/124e8e" alt="" /></div>
+        <div class="body"><p class="tag">Our Philosophy</p><h3>The Renewity Difference</h3><p>Why we built a 20-resident home instead of a much larger community.</p></div>
+      </a>
+      <a href="blog-connection-is-care.html" class="blog-card card-lift reveal d2">
+        <div class="thumb"><img src="https://placehold.co/700x440/1e3a5f/1e3a5f" alt="" /></div>
+        <div class="body"><p class="tag">Wellness</p><h3>Connection Is Care at Renewity</h3><p>How daily social engagement supports brain health and emotional well-being.</p></div>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- FAMILY VOICES (placeholder — swap for real reviews) -->
-<section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);background:var(--cream-alt);">
+<section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);">
   <div class="max-w-[760px] mx-auto text-center reveal">
     <p class="eyebrow center justify-center">Family Voices</p>
     <div class="testimonial-card mt-10">
@@ -209,40 +234,41 @@
 <!-- CTA -->
 <section class="relative px-6 md:px-12 py-28 md:py-36 overflow-hidden">
   <div class="absolute inset-0">
-    <img src="https://placehold.co/1800x1000/8a6a52/8a6a52" alt="" class="w-full h-full object-cover" />
-    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(42,33,25,.88),rgba(42,33,25,.8));"></div>
+    <img src="https://placehold.co/1800x1000/1a6fc4/1a6fc4" alt="" class="w-full h-full object-cover" />
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.88),rgba(14,27,41,.8));"></div>
   </div>
   <div class="relative z-10 max-w-2xl mx-auto text-center reveal">
-    <p class="eyebrow on-dark center justify-center">Come See for Yourself</p>
-    <h2 class="font-display font-medium mt-6 leading-tight" style="color:var(--paper);font-size:clamp(2rem,4.2vw,3.2rem);">Walk through our door.</h2>
-    <p class="mt-6" style="color:rgba(251,246,236,.8);">No pressure, no scripts — just an honest look at the home and a real conversation about what your family needs.</p>
+    <p class="eyebrow on-dark center justify-center">Got Questions? Contact Us.</p>
+    <h2 class="font-display font-semibold mt-6 leading-tight" style="color:var(--paper);font-size:clamp(2rem,4.2vw,3.2rem);">There is promise in each new day.</h2>
+    <p class="mt-6" style="color:rgba(246,250,254,.82);">Renewity is here to help you find the joy in every new day — a place where you'll truly be at home.</p>
     <div class="mt-10 flex flex-wrap items-center justify-center gap-5">
-      <a href="contact.html" class="btn btn-primary">Schedule a Visit</a>
-      <a href="getting-started.html" class="btn btn-ghost">How to Get Started</a>
+      <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
+      <a href="tel:8127251660" class="btn btn-ghost">Call (812) 725-1660</a>
     </div>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer style="background:var(--dusk);color:rgba(251,246,236,.7);">
+<footer style="background:var(--navy-dark);color:rgba(246,250,254,.7);">
   <div class="max-w-[1280px] mx-auto px-6 md:px-12 pt-20 pb-10 grid md:grid-cols-12 gap-12">
     <div class="md:col-span-4">
-      <p class="font-display" style="color:var(--paper);font-size:1.5rem;">Renewity</p>
+      <p class="font-display font-semibold" style="color:var(--paper);font-size:1.5rem;">Renewity</p>
       <p class="eyebrow on-dark mt-2">Residential Care Home for Seniors</p>
-      <p class="mt-6 text-sm leading-relaxed max-w-xs">A small, home-like residential care home in New Albany, Indiana — renewing life, one day at a time.</p>
+      <p class="mt-6 text-sm leading-relaxed max-w-xs">Brand-new, all-inclusive senior living in New Albany, Indiana — renewing life and redefining the standards of care.</p>
     </div>
     <div class="md:col-span-2 md:col-start-6">
-      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--tan);">Explore</p>
+      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--sky);">Explore</p>
       <ul class="space-y-3 text-sm">
         <li><a href="index.html" style="opacity:.85;">Home</a></li>
         <li><a href="our-home.html" style="opacity:.85;">Our Home</a></li>
-        <li><a href="care.html" style="opacity:.85;">Care &amp; Services</a></li>
-        <li><a href="getting-started.html" style="opacity:.85;">Getting Started</a></li>
+        <li><a href="care.html" style="opacity:.85;">Life with Renewity</a></li>
+        <li><a href="blog.html" style="opacity:.85;">Blog</a></li>
         <li><a href="contact.html" style="opacity:.85;">Contact</a></li>
+        <li><a href="realtor-partners.html" style="opacity:.85;">Realtor Information</a></li>
       </ul>
     </div>
     <div class="md:col-span-3">
-      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--tan);">Contact</p>
+      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--sky);">Contact</p>
       <ul class="space-y-3 text-sm" style="opacity:.9;">
         <li>(812) 725-1660</li>
         <li>michele@renewityassistedliving.com</li>
@@ -250,9 +276,9 @@
       </ul>
     </div>
   </div>
-  <div class="max-w-[1280px] mx-auto px-6 md:px-12 py-6 border-t flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style="border-color:rgba(251,246,236,.12);opacity:.55;">
+  <div class="max-w-[1280px] mx-auto px-6 md:px-12 py-6 border-t flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style="border-color:rgba(246,250,254,.12);opacity:.55;">
     <p>&copy; 2026 Renewity Residential Care Home for Seniors. All rights reserved.</p>
-    <p>A Residential Care Home — Not a Skilled Nursing Facility</p>
+    <p>Home-Style Assisted Living — Not a Skilled Nursing Facility</p>
   </div>
 </footer>
 

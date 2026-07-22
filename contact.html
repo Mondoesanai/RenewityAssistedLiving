@@ -4,11 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Contact | Renewity Residential Care Home for Seniors</title>
-<meta name="description" content="Schedule a visit or ask a question — Renewity Residential Care Home, 3755 St Joseph Road, New Albany, IN 47150. (812) 725-1660." />
+<meta name="description" content="Schedule a tour or ask a question — Renewity Residential Care Home, 3755 St Joseph Road, New Albany, IN 47150. (812) 725-1660." />
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,500&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
@@ -25,39 +25,40 @@
     <nav class="nav-links">
       <a href="index.html">Home</a>
       <a href="our-home.html">Our Home</a>
-      <a href="care.html">Care &amp; Services</a>
-      <a href="getting-started.html">Getting Started</a>
+      <a href="care.html">Life with Renewity</a>
+      <a href="blog.html">Blog</a>
       <a href="contact.html" class="active">Contact</a>
     </nav>
-    <a href="tel:8127251660" class="btn btn-primary hidden lg:inline-flex">(812) 725-1660</a>
+    <div class="flex items-center gap-3">
+      <a href="realtor-partners.html" class="nav-pill hide-mobile hidden md:inline-flex">Realtor Info</a>
+      <a href="tel:8127251660" class="btn btn-primary hidden lg:inline-flex">(812) 725-1660</a>
+    </div>
     <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 <div class="mobile-panel">
   <a href="index.html">Home</a>
   <a href="our-home.html">Our Home</a>
-  <a href="care.html">Care &amp; Services</a>
-  <a href="getting-started.html">Getting Started</a>
+  <a href="care.html">Life with Renewity</a>
+  <a href="blog.html">Blog</a>
   <a href="contact.html">Contact</a>
+  <a href="realtor-partners.html" class="mp-pill">Realtor Information</a>
+  <a href="care.html#memory-care" class="mp-pill">Ask About Memory Care</a>
 </div>
 
 <!-- PAGE HERO -->
-<section class="relative pt-44 pb-16 md:pt-52 md:pb-20 px-6 md:px-12 overflow-hidden">
-  <div class="absolute inset-0">
-    <img src="https://placehold.co/2000x900/e9dbc0/e9dbc0" alt="" class="w-full h-full object-cover" />
-    <div class="absolute inset-0" style="background:rgba(251,246,236,.86);"></div>
-  </div>
+<section class="relative pt-44 pb-16 md:pt-52 md:pb-20 px-6 md:px-12 overflow-hidden" style="background:var(--cream-alt);">
   <div class="relative z-10 max-w-[1280px] mx-auto reveal">
     <p class="eyebrow">Contact</p>
-    <h1 class="font-display font-medium mt-6 leading-tight" style="font-size:clamp(2.2rem,5vw,4rem);max-width:16ch;">A real person answers.</h1>
+    <h1 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2.2rem,5vw,4rem);max-width:16ch;">Got questions? Contact us!</h1>
     <p class="mt-6 max-w-xl leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
-      Call, email, or send us a message below. We'll respond honestly, with zero pressure.
+      Brand-new, all-inclusive senior living, redefined — with short-term stays also available. Reach out any time.
     </p>
   </div>
 </section>
 
 <!-- CONTACT GRID -->
-<section class="px-6 md:px-12" style="padding-top:0;padding-bottom:var(--section-pad);">
+<section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);">
   <div class="max-w-[1280px] mx-auto grid md:grid-cols-12 gap-12">
 
     <!-- FORM -->
@@ -65,44 +66,35 @@
       <form id="inquiry-form" class="space-y-6">
         <div class="grid sm:grid-cols-2 gap-6">
           <div class="field">
-            <label for="first-name">First Name</label>
+            <label for="first-name">First Name<span style="color:var(--blue);">*</span></label>
             <input type="text" id="first-name" name="first-name" required />
           </div>
           <div class="field">
-            <label for="last-name">Last Name</label>
+            <label for="last-name">Last Name<span style="color:var(--blue);">*</span></label>
             <input type="text" id="last-name" name="last-name" required />
           </div>
         </div>
         <div class="grid sm:grid-cols-2 gap-6">
           <div class="field">
-            <label for="email">Email</label>
+            <label for="email">Email<span style="color:var(--blue);">*</span></label>
             <input type="email" id="email" name="email" required />
           </div>
           <div class="field">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" required />
+            <label for="email-confirm">Confirm Email<span style="color:var(--blue);">*</span></label>
+            <input type="email" id="email-confirm" name="email-confirm" required />
           </div>
         </div>
         <div class="field">
-          <label for="care-level">What kind of care are you looking into?</label>
-          <select id="care-level" name="care-level">
-            <option>Personal Care / Daily Living Assistance</option>
-            <option>Memory Care</option>
-            <option>Respite / Short-Term Stay</option>
-            <option>Not Sure Yet — Just Exploring</option>
-          </select>
+          <label for="phone">Phone<span style="color:var(--blue);">*</span></label>
+          <input type="tel" id="phone" name="phone" required />
         </div>
         <div class="field">
-          <label for="timeline">Timeline</label>
-          <select id="timeline" name="timeline">
-            <option>Right Away</option>
-            <option>Within 1–3 Months</option>
-            <option>Just Researching</option>
-          </select>
+          <label for="comments">Comments<span style="color:var(--blue);">*</span></label>
+          <textarea id="comments" name="comments" maxlength="600" placeholder="Please let us know what's on your mind. Have a question for us? Ask away." required></textarea>
+          <p id="comments-count" class="field-hint">0 of 600 max characters</p>
         </div>
-        <div class="field">
-          <label for="message">Anything else we should know?</label>
-          <textarea id="message" name="message" placeholder="Tell us a bit about your loved one and what you're looking for."></textarea>
+        <div class="field-hint" style="border:1px dashed rgba(16,32,48,.25);border-radius:10px;padding:.9em 1em;">
+          reCAPTCHA verification will go here once the form is connected to a live inbox.
         </div>
         <button type="submit" class="btn btn-primary w-full sm:w-auto">Send Message</button>
         <p class="text-xs" style="color:var(--ink-faint);">A member of our team will follow up personally — no bots, no call centers.</p>
@@ -128,7 +120,7 @@
           </li>
         </ul>
       </div>
-      <div class="mt-6 overflow-hidden" style="border:1px solid rgba(43,36,30,.12);">
+      <div class="mt-6 overflow-hidden rounded-2xl" style="border:1px solid rgba(16,32,48,.12);">
         <iframe
           title="Map to Renewity Residential Care Home"
           src="https://www.google.com/maps?q=3755+St+Joseph+Road,+New+Albany,+IN+47150&output=embed"
@@ -140,25 +132,26 @@
 </section>
 
 <!-- FOOTER -->
-<footer style="background:var(--dusk);color:rgba(251,246,236,.7);">
+<footer style="background:var(--navy-dark);color:rgba(246,250,254,.7);">
   <div class="max-w-[1280px] mx-auto px-6 md:px-12 pt-20 pb-10 grid md:grid-cols-12 gap-12">
     <div class="md:col-span-4">
-      <p class="font-display" style="color:var(--paper);font-size:1.5rem;">Renewity</p>
+      <p class="font-display font-semibold" style="color:var(--paper);font-size:1.5rem;">Renewity</p>
       <p class="eyebrow on-dark mt-2">Residential Care Home for Seniors</p>
-      <p class="mt-6 text-sm leading-relaxed max-w-xs">A small, home-like residential care home in New Albany, Indiana — renewing life, one day at a time.</p>
+      <p class="mt-6 text-sm leading-relaxed max-w-xs">Brand-new, all-inclusive senior living in New Albany, Indiana — renewing life and redefining the standards of care.</p>
     </div>
     <div class="md:col-span-2 md:col-start-6">
-      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--tan);">Explore</p>
+      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--sky);">Explore</p>
       <ul class="space-y-3 text-sm">
         <li><a href="index.html" style="opacity:.85;">Home</a></li>
         <li><a href="our-home.html" style="opacity:.85;">Our Home</a></li>
-        <li><a href="care.html" style="opacity:.85;">Care &amp; Services</a></li>
-        <li><a href="getting-started.html" style="opacity:.85;">Getting Started</a></li>
+        <li><a href="care.html" style="opacity:.85;">Life with Renewity</a></li>
+        <li><a href="blog.html" style="opacity:.85;">Blog</a></li>
         <li><a href="contact.html" style="opacity:.85;">Contact</a></li>
+        <li><a href="realtor-partners.html" style="opacity:.85;">Realtor Information</a></li>
       </ul>
     </div>
     <div class="md:col-span-3">
-      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--tan);">Contact</p>
+      <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--sky);">Contact</p>
       <ul class="space-y-3 text-sm" style="opacity:.9;">
         <li>(812) 725-1660</li>
         <li>michele@renewityassistedliving.com</li>
@@ -166,9 +159,9 @@
       </ul>
     </div>
   </div>
-  <div class="max-w-[1280px] mx-auto px-6 md:px-12 py-6 border-t flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style="border-color:rgba(251,246,236,.12);opacity:.55;">
+  <div class="max-w-[1280px] mx-auto px-6 md:px-12 py-6 border-t flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style="border-color:rgba(246,250,254,.12);opacity:.55;">
     <p>&copy; 2026 Renewity Residential Care Home for Seniors. All rights reserved.</p>
-    <p>A Residential Care Home — Not a Skilled Nursing Facility</p>
+    <p>Home-Style Assisted Living — Not a Skilled Nursing Facility</p>
   </div>
 </footer>
 
