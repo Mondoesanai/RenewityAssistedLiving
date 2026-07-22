@@ -30,9 +30,7 @@
       <a href="contact.html">Contact</a>
     </nav>
     <div class="flex items-center gap-3">
-      <a href="realtor-partners.html" class="nav-pill hide-mobile hidden md:inline-flex">Realtor Info</a>
-      <a href="care.html#memory-care" class="nav-pill hide-mobile hidden md:inline-flex">Memory Care</a>
-      <a href="contact.html" class="btn btn-primary hidden lg:inline-flex">Schedule a Tour</a>
+      <a href="contact.html" class="btn btn-primary hidden md:inline-flex">Schedule a Tour</a>
     </div>
     <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -43,35 +41,37 @@
   <a href="care.html">Life with Renewity</a>
   <a href="blog.html">Blog</a>
   <a href="contact.html">Contact</a>
-  <a href="realtor-partners.html" class="mp-pill">Realtor Information</a>
-  <a href="care.html#memory-care" class="mp-pill">Ask About Memory Care</a>
+  <a href="contact.html" class="mp-pill">Schedule a Tour</a>
 </div>
 
 <!-- HERO -->
-<section class="relative min-h-screen flex items-end overflow-hidden">
+<section class="relative min-h-screen flex items-end overflow-hidden glow-zone">
   <div class="hero-media">
-    <video autoplay muted loop playsinline poster="https://placehold.co/2000x1300/1a6fc4/1a6fc4">
+    <video autoplay muted loop playsinline poster="assets/placeholders/hero-poster.svg">
       <source src="assets/hero-video.mp4" type="video/mp4" />
     </video>
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.55) 0%,rgba(14,27,41,.3) 40%,rgba(14,27,41,.82) 100%);"></div>
   </div>
+  <div class="node-canvas-wrap"><canvas></canvas></div>
+  <div class="cursor-glow"></div>
+
+  <div class="badge-corner">
+    <img src="assets/badge-assisted-living-magazine.png" alt="Best in Senior Living — Assisted Living Magazine award badge" class="award-seal" />
+  </div>
 
   <div class="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-12 pb-20 md:pb-28 pt-40">
-    <div class="reveal mb-8">
-      <img src="assets/badge-assisted-living-magazine.png" alt="Best in Senior Living — Assisted Living Magazine award badge" class="award-seal" />
-    </div>
-    <p class="eyebrow on-dark reveal d1">New Albany, Indiana</p>
-    <h1 class="reveal d2 mt-6 font-display font-semibold leading-[1.02] tracking-tight" style="color:var(--paper);font-size:clamp(2.6rem,6.6vw,5.2rem);">
+    <p class="eyebrow on-dark reveal">New Albany, Indiana</p>
+    <h1 class="reveal d1 mt-6 font-display font-semibold leading-[1.02] tracking-tight" style="color:var(--paper);font-size:clamp(2.6rem,6.6vw,5.2rem);">
       Welcome to Renewity<br/>
       <em class="font-semibold not-italic" style="color:var(--sky);">Residential Care Home for Seniors</em>
     </h1>
-    <p class="reveal d3 mt-8 max-w-xl text-base md:text-lg leading-relaxed" style="color:rgba(246,250,254,.88);">
+    <p class="reveal d2 mt-8 max-w-xl text-base md:text-lg leading-relaxed" style="color:rgba(246,250,254,.88);">
       Renewity emerged from a simple conviction: our aging loved ones deserve to be nurtured and cherished, not processed through a system. This is home-style assisted living — small, personal, and built entirely around you.
     </p>
-    <div class="reveal d4 mt-10 flex flex-wrap items-center gap-4">
+    <div class="reveal d3 mt-10 flex flex-wrap items-center gap-x-6 gap-y-3">
       <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
-      <a href="realtor-partners.html" class="btn btn-ghost">Realtor Information</a>
-      <a href="care.html#memory-care" class="btn btn-ghost">Ask About Memory Care</a>
+      <a href="realtor-partners.html" class="text-sm font-semibold" style="color:rgba(246,250,254,.85);border-bottom:1px solid rgba(246,250,254,.4);padding-bottom:2px;">Realtor Information</a>
+      <a href="care.html#memory-care" class="text-sm font-semibold" style="color:rgba(246,250,254,.85);border-bottom:1px solid rgba(246,250,254,.4);padding-bottom:2px;">Ask About Memory Care</a>
     </div>
   </div>
 </section>
@@ -97,8 +97,9 @@
 <!-- MISSION -->
 <section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);">
   <div class="max-w-[1280px] mx-auto grid md:grid-cols-12 gap-12 items-center">
-    <div class="md:col-span-5 reveal">
-      <img src="https://placehold.co/900x1100/1a6fc4/1a6fc4" alt="A Renewity caregiver with a resident" class="w-full aspect-[4/5] object-cover rounded-2xl" />
+    <div class="md:col-span-5 reveal art-frame rounded-2xl">
+      <img src="assets/placeholders/mission.svg" alt="Illustration placeholder — real photo of a Renewity caregiver with a resident coming soon" class="w-full aspect-[4/5] object-cover rounded-2xl" />
+      <span class="art-tag">Photo coming soon</span>
     </div>
     <div class="md:col-span-6 md:col-start-7 reveal d1">
       <p class="eyebrow">Our Mission</p>
@@ -117,8 +118,9 @@
 </section>
 
 <!-- WHY RENEWITY -->
-<section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);background:var(--cream-alt);">
-  <div class="max-w-[1280px] mx-auto">
+<section class="relative px-6 md:px-12 overflow-hidden" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);background:var(--cream-alt);">
+  <div class="blob-field"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+  <div class="relative max-w-[1280px] mx-auto">
     <div class="mb-14 reveal max-w-2xl">
       <p class="eyebrow">Why Renewity?</p>
       <h2 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2rem,3.8vw,3.2rem);">A home-style ratio, not a facility-sized one.</h2>
@@ -147,11 +149,12 @@
 </section>
 
 <!-- OPEN FOR TOURS CTA -->
-<section class="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
+<section class="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden glow-zone">
   <div class="absolute inset-0">
-    <img src="https://placehold.co/1800x1000/124e8e/124e8e" alt="" class="w-full h-full object-cover" />
+    <img src="assets/placeholders/hero-poster.svg" alt="" class="w-full h-full object-cover" />
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.88),rgba(14,27,41,.8));"></div>
   </div>
+  <div class="cursor-glow"></div>
   <div class="relative z-10 max-w-3xl mx-auto text-center reveal">
     <p class="eyebrow on-dark center justify-center">We Are Open for Tours</p>
     <h2 class="font-display font-semibold mt-6 leading-tight" style="color:var(--paper);font-size:clamp(2rem,4.2vw,3.2rem);">Brand-new, all-inclusive senior living — redefined.</h2>
@@ -202,15 +205,15 @@
     </div>
     <div class="grid md:grid-cols-3 gap-6">
       <a href="blog-facility-vs-home.html" class="blog-card card-lift reveal">
-        <div class="thumb"><img src="https://placehold.co/700x440/1a6fc4/1a6fc4" alt="" /></div>
+        <div class="thumb"><img src="assets/placeholders/blog-compare.svg" alt="" /></div>
         <div class="body"><p class="tag">Choosing Care</p><h3>Facility vs. Home Assisted Living Services</h3><p>Why a 5:1 ratio changes everything compared to the ~20:1 average at larger communities.</p></div>
       </a>
       <a href="blog-renewity-difference.html" class="blog-card card-lift reveal d1">
-        <div class="thumb"><img src="https://placehold.co/700x440/124e8e/124e8e" alt="" /></div>
+        <div class="thumb"><img src="assets/placeholders/hero-poster.svg" alt="" /></div>
         <div class="body"><p class="tag">Our Philosophy</p><h3>The Renewity Difference</h3><p>Why we built a 20-resident home instead of a much larger community.</p></div>
       </a>
       <a href="blog-connection-is-care.html" class="blog-card card-lift reveal d2">
-        <div class="thumb"><img src="https://placehold.co/700x440/1e3a5f/1e3a5f" alt="" /></div>
+        <div class="thumb"><img src="assets/placeholders/blog-connection.svg" alt="" /></div>
         <div class="body"><p class="tag">Wellness</p><h3>Connection Is Care at Renewity</h3><p>How daily social engagement supports brain health and emotional well-being.</p></div>
       </a>
     </div>
@@ -232,11 +235,12 @@
 </section>
 
 <!-- CTA -->
-<section class="relative px-6 md:px-12 py-28 md:py-36 overflow-hidden">
+<section class="relative px-6 md:px-12 py-28 md:py-36 overflow-hidden glow-zone">
   <div class="absolute inset-0">
-    <img src="https://placehold.co/1800x1000/1a6fc4/1a6fc4" alt="" class="w-full h-full object-cover" />
+    <img src="assets/placeholders/community.svg" alt="" class="w-full h-full object-cover" />
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.88),rgba(14,27,41,.8));"></div>
   </div>
+  <div class="cursor-glow"></div>
   <div class="relative z-10 max-w-2xl mx-auto text-center reveal">
     <p class="eyebrow on-dark center justify-center">Got Questions? Contact Us.</p>
     <h2 class="font-display font-semibold mt-6 leading-tight" style="color:var(--paper);font-size:clamp(2rem,4.2vw,3.2rem);">There is promise in each new day.</h2>
@@ -265,6 +269,7 @@
         <li><a href="blog.html" style="opacity:.85;">Blog</a></li>
         <li><a href="contact.html" style="opacity:.85;">Contact</a></li>
         <li><a href="realtor-partners.html" style="opacity:.85;">Realtor Information</a></li>
+        <li><a href="care.html#memory-care" style="opacity:.85;">Memory Care</a></li>
       </ul>
     </div>
     <div class="md:col-span-3">
