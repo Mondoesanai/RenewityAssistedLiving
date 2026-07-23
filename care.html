@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Life with Renewity | Residential Care Home for Seniors</title>
-<meta name="description" content="Personal care, memory care, home-cooked meals, and daily activities at Renewity — home-style assisted living with a 5:1 caregiver ratio, not a large facility or skilled nursing home." />
+<meta name="description" content="Personal care, memory care, home-cooked meals, and daily activities at Renewity — a congregate care home with a 5:1 caregiver ratio, not a skilled nursing facility." />
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,8 +12,6 @@
 <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-
-<div class="grain"></div>
 
 <!-- NAV -->
 <header id="nav" class="nav--static">
@@ -45,8 +43,11 @@
 </div>
 
 <!-- PAGE HERO -->
-<section class="relative pt-44 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 overflow-hidden" style="background:var(--cream-alt);">
-  <div class="blob-field"><div class="blob blob-1"></div><div class="blob blob-2"></div></div>
+<section class="relative pt-44 pb-20 md:pt-52 md:pb-28 px-6 md:px-12 overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1762955911431-4c44c7c3f408?w=2000&q=75&fit=crop&auto=format" alt="" class="w-full h-full object-cover" />
+    <div class="absolute inset-0" style="background:rgba(246,250,254,.78);"></div>
+  </div>
   <div class="relative z-10 max-w-[1280px] mx-auto reveal">
     <p class="eyebrow">Life with Renewity</p>
     <h1 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2.2rem,5vw,4rem);max-width:18ch;">Connection is care.</h1>
@@ -67,7 +68,7 @@
     <div id="memory-care" class="service-card card-lift reveal d1" style="scroll-margin-top:120px;">
       <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M5 21c0-3.9 3.1-6 7-6s7 2.1 7 6"/></svg></div>
       <h3>Memory Care</h3>
-      <p>A calm, consistent routine for residents living with Alzheimer's or dementia, guided by caregivers trained in memory support.</p>
+      <p>A calm, consistent routine and secure environment for residents with memory-related needs, guided by caregivers trained in redirection and communication techniques.</p>
     </div>
     <div class="service-card card-lift reveal d2">
       <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3c2 3 5 4 5 8a5 5 0 0 1-10 0c0-4 3-5 5-8Z"/></svg></div>
@@ -77,7 +78,7 @@
     <div class="service-card card-lift reveal">
       <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg></div>
       <h3>Daily Activities</h3>
-      <p>The Tovertafel&reg; interactive gaming system, chair exercise, music, crafts, and holiday celebrations — companionship, not just supervision.</p>
+      <p>The Tovertafel&reg; interactive activity system, chair exercise, music, crafts, and holiday celebrations — companionship, not just supervision.</p>
     </div>
     <div class="service-card card-lift reveal d1">
       <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
@@ -114,14 +115,14 @@
       <p class="eyebrow">Connection Is Care</p>
       <h2 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(1.9rem,3.4vw,2.9rem);">Why social engagement matters for the brain.</h2>
       <p class="mt-6 leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
-        Regular social interaction helps keep memory, attention, and communication active — while reducing the risk of depression and loneliness, both linked to broader health decline and conditions like dementia and Alzheimer's disease.
+        Regular social interaction helps keep memory, attention, and communication active — while reducing the risk of depression and loneliness, both linked to broader health decline.
       </p>
       <p class="mt-4 leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
         We weave connection into daily life through structured group activities — games, fitness classes, discussion groups, and creative workshops — plus communal dining that gives residents regular opportunities to build relationships, and outings and celebrations that nurture a real sense of community.
       </p>
     </div>
     <div class="md:col-span-5 md:col-start-8 reveal d1">
-      <img src="assets/placeholders/community.svg" alt="Illustration placeholder — real photo of residents engaged in a group activity coming soon" class="w-full aspect-[4/5] object-cover rounded-2xl" />
+      <img src="https://images.unsplash.com/photo-1513159446162-54eb8bdaa79b?w=800&q=80&fit=crop&auto=format" alt="Residents engaged in a group activity" class="w-full aspect-[4/5] object-cover rounded-2xl" />
     </div>
   </div>
 </section>
@@ -202,11 +203,11 @@
     <div class="reveal d1">
       <div class="acc-item open">
         <button class="acc-head"><span>Is Renewity a skilled nursing facility?</span><span class="acc-icon"></span></button>
-        <div class="acc-body"><p>No. Renewity is a residential, home-style assisted living community providing non-medical assistance with daily living. We coordinate closely with each resident's own physicians and outside home health or hospice providers when medical needs arise, but we are not a skilled nursing or rehabilitation facility.</p></div>
+        <div class="acc-body"><p>No. Renewity operates as a congregate care home — providing non-medical assistance with activities of daily living such as cooking, cleaning, bathing, and mobility. We coordinate with each resident's own physicians and outside home health or hospice providers when medical needs arise, but we do not provide skilled nursing or medical treatment on-site.</p></div>
       </div>
       <div class="acc-item">
         <button class="acc-head"><span>What is memory care at Renewity?</span><span class="acc-icon"></span></button>
-        <div class="acc-body"><p>For residents living with Alzheimer's or other forms of dementia, we provide a calm, familiar routine, a secure environment, and caregivers trained specifically in memory support — including access to the Tovertafel interactive gaming system.</p></div>
+        <div class="acc-body"><p>For residents with memory-related needs, we provide a calm, familiar routine, a secure environment, and caregivers trained in redirection and communication techniques — not clinical dementia treatment.</p></div>
       </div>
       <div class="acc-item">
         <button class="acc-head"><span>Is someone awake and available overnight?</span><span class="acc-icon"></span></button>
@@ -223,8 +224,8 @@
 <!-- CTA -->
 <section class="relative px-6 md:px-12 py-28 md:py-36 overflow-hidden">
   <div class="absolute inset-0">
-    <img src="assets/placeholders/hero-poster.svg" alt="" class="w-full h-full object-cover" />
-    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.88),rgba(14,27,41,.8));"></div>
+    <img src="https://images.unsplash.com/photo-1569508926450-cd832544c4ae?w=1800&q=80&fit=crop&auto=format" alt="" class="w-full h-full object-cover" />
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.85),rgba(14,27,41,.8));"></div>
   </div>
   <div class="relative z-10 max-w-2xl mx-auto text-center reveal">
     <p class="eyebrow on-dark center justify-center">Still Have Questions?</p>
@@ -242,7 +243,7 @@
     <div class="md:col-span-4">
       <p class="font-display font-semibold" style="color:var(--paper);font-size:1.5rem;">Renewity</p>
       <p class="eyebrow on-dark mt-2">Residential Care Home for Seniors</p>
-      <p class="mt-6 text-sm leading-relaxed max-w-xs">Brand-new, all-inclusive senior living in New Albany, Indiana — renewing life and redefining the standards of care.</p>
+      <p class="mt-6 text-sm leading-relaxed max-w-xs">A congregate care home in New Albany, Indiana — renewing life and redefining the standards of care.</p>
     </div>
     <div class="md:col-span-2 md:col-start-6">
       <p class="text-xs tracking-widest uppercase mb-5" style="color:var(--sky);">Explore</p>
@@ -253,7 +254,6 @@
         <li><a href="blog.html" style="opacity:.85;">Blog</a></li>
         <li><a href="contact.html" style="opacity:.85;">Contact</a></li>
         <li><a href="realtor-partners.html" style="opacity:.85;">Realtor Information</a></li>
-        <li><a href="care.html#memory-care" style="opacity:.85;">Memory Care</a></li>
       </ul>
     </div>
     <div class="md:col-span-3">
@@ -267,7 +267,7 @@
   </div>
   <div class="max-w-[1280px] mx-auto px-6 md:px-12 py-6 border-t flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style="border-color:rgba(246,250,254,.12);opacity:.55;">
     <p>&copy; 2026 Renewity Residential Care Home for Seniors. All rights reserved.</p>
-    <p>Home-Style Assisted Living — Not a Skilled Nursing Facility</p>
+    <p>A Congregate Care Home — Not a Skilled Nursing Facility</p>
   </div>
 </footer>
 
