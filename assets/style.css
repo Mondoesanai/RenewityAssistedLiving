@@ -89,7 +89,7 @@ footer a:hover{opacity:1 !important;}
 .nav-inner{max-width:1280px;margin:0 auto;padding:0 clamp(1.5rem,4vw,3rem);display:flex;align-items:center;justify-content:space-between;gap:1.5rem;}
 .nav-mark{display:flex;align-items:center;gap:.7rem;}
 .nav-mark svg{width:30px;height:30px;flex-shrink:0;color:var(--blue);}
-.nav-mark img.logo-mark{width:46px;height:46px;flex-shrink:0;object-fit:contain;}
+.nav-mark img.logo-mark{width:46px;height:46px;flex-shrink:0;object-fit:contain;border-radius:11px;}
 .nav-mark .word{font-family:'Bricolage Grotesque',sans-serif;font-size:1.4rem;font-weight:600;letter-spacing:.01em;color:var(--ink);line-height:1;}
 .nav-mark .word small{display:block;font-family:'Inter',sans-serif;font-size:.56rem;letter-spacing:.24em;text-transform:uppercase;color:var(--blue-deep);margin-top:.4em;font-weight:600;}
 #nav:not(.nav--scrolled):not(.nav--static) .nav-mark .word,
@@ -164,22 +164,15 @@ footer a:hover{opacity:1 !important;}
 .award-seal-wrap.on-dark .award-seal-text{color:rgba(246,250,254,.8);}
 .award-seal-wrap.on-dark .award-seal-text strong{color:var(--paper);}
 
-.badge-float{animation:badgeFloat 5s ease-in-out infinite;perspective:700px;}
+.badge-float{perspective:900px;}
 .badge-float .award-seal-lg{
-  width:clamp(110px,12vw,150px);height:auto;display:block;
-  filter:drop-shadow(0 12px 24px rgba(16,32,48,.22));
-  transition:transform .25s var(--ease);transform-style:preserve-3d;will-change:transform;
+  width:clamp(220px,26vw,340px);height:auto;display:block;
+  filter:drop-shadow(0 16px 32px rgba(16,32,48,.24));
 }
-@keyframes badgeFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
-@media(prefers-reduced-motion:reduce){.badge-float{animation:none;}}
 
-/* ---------- tilt-on-mousemove cards (home page only) ---------- */
-.tilt-float{animation:tiltFloat 5.5s ease-in-out infinite;}
-.tilt-float.ft1{animation-delay:.4s;} .tilt-float.ft2{animation-delay:.8s;} .tilt-float.ft3{animation-delay:1.2s;}
-@keyframes tiltFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-5px);}}
-.tilt-target{transition:transform .3s ease-out;transform-style:preserve-3d;will-change:transform;}
-@media(prefers-reduced-motion:reduce){.tilt-float{animation:none;}.tilt-target{transition:none;}}
-@media(hover:none){.tilt-float{animation:none;}}
+/* ---------- unified tilt + float for cards site-wide (JS-driven, see script.js) ---------- */
+.tilt-card{transition:transform .25s ease-out;will-change:transform;}
+@media(prefers-reduced-motion:reduce){.tilt-card{transition:none !important;transform:none !important;}}
 
 /* ---------- stat counters ---------- */
 .stat-num{font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(2.2rem,4.2vw,3.2rem);color:var(--paper);line-height:1;}
@@ -266,6 +259,20 @@ footer a:hover{opacity:1 !important;}
   font-size:.62rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.4em .8em;border-radius:99px;
   backdrop-filter:blur(4px);
 }
+
+/* ---------- testimonial preview carousel (home page) ---------- */
+.tcarousel{position:relative;}
+.tcarousel-track{display:flex;gap:1.5rem;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding-bottom:.5rem;-ms-overflow-style:none;scrollbar-width:none;}
+.tcarousel-track::-webkit-scrollbar{display:none;}
+.tcarousel-track .video-card{flex:0 0 clamp(220px,26vw,280px);scroll-snap-align:start;}
+.tcarousel-next{
+  position:absolute;top:38%;right:-.5rem;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;
+  background:var(--blue);color:var(--paper);display:flex;align-items:center;justify-content:center;border:none;cursor:pointer;
+  box-shadow:0 10px 24px -6px rgba(26,111,196,.55);transition:background .3s var(--ease),transform .3s var(--ease);z-index:3;
+}
+.tcarousel-next:hover{background:var(--blue-bright);transform:translateY(-50%) scale(1.06);}
+.tcarousel-next svg{width:20px;height:20px;}
+@media(max-width:640px){.tcarousel-next{right:0;}}
 
 /* ---------- misc utility ---------- */
 .badge-soft{display:inline-flex;align-items:center;gap:.5em;padding:.5em 1.1em;background:var(--navy-pale);color:var(--navy);font-size:.76rem;font-weight:600;border-radius:99px;letter-spacing:.02em;}

@@ -67,18 +67,40 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.5 });
   counters.forEach(el => countIO.observe(el));
 
-  /* subtle mouse-follow tilt for home page cards + the recognition badge */
-  const tiltEls = document.querySelectorAll('.tilt-target');
-  if (tiltEls.length && window.matchMedia('(hover: hover)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const maxTilt = 5;
+  /* unified subtle tilt + float for every .tilt-card on the page */
+  const tiltCards = Array.from(document.querySelectorAll('.tilt-card'));
+  if (tiltCards.length && window.matchMedia('(hover: hover)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const maxTilt = 4;
+    const floatAmp = 4;
+    let mx = 0, my = 0;
     window.addEventListener('mousemove', (e) => {
-      const dx = (e.clientX / window.innerWidth) * 2 - 1;
-      const dy = (e.clientY / window.innerHeight) * 2 - 1;
-      tiltEls.forEach(el => {
-        el.style.transform = `perspective(900px) rotateX(${(-dy * maxTilt).toFixed(2)}deg) rotateY(${(dx * maxTilt).toFixed(2)}deg)`;
-      });
+      mx = (e.clientX / window.innerWidth) * 2 - 1;
+      my = (e.clientY / window.innerHeight) * 2 - 1;
     }, { passive: true });
+    const loop = (t) => {
+      const time = t / 1000;
+      const rx = (-my * maxTilt).toFixed(2);
+      const ry = (mx * maxTilt).toFixed(2);
+      tiltCards.forEach((el, i) => {
+        const floatY = Math.sin(time * 0.6 + i * 0.7) * floatAmp;
+        el.style.transform = `translateY(${floatY.toFixed(2)}px) perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+      });
+      requestAnimationFrame(loop);
+    };
+    requestAnimationFrame(loop);
   }
+
+  /* testimonial preview carousel (home page) */
+  document.querySelectorAll('.tcarousel').forEach(carousel => {
+    const track = carousel.querySelector('.tcarousel-track');
+    const next = carousel.querySelector('.tcarousel-next');
+    next?.addEventListener('click', () => {
+      const card = track.querySelector('.video-card');
+      const step = card ? card.getBoundingClientRect().width + 24 : 260;
+      const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 10;
+      track.scrollTo({ left: atEnd ? 0 : track.scrollLeft + step, behavior: 'smooth' });
+    });
+  });
 
   /* accordion (FAQ) */
   document.querySelectorAll('.acc-head').forEach(head => {

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Contact | Renewity Residential Care Home for Seniors</title>
-<meta name="description" content="Schedule a tour or ask a question — Renewity Residential Care Home, 3755 St Joseph Road, New Albany, IN 47150. (812) 725-1660." />
+<title>Schedule a Tour | Renewity Residential Care Home for Seniors</title>
+<meta name="description" content="Schedule a tour of Renewity Residential Care Home — 3755 St Joseph Road, New Albany, IN 47150. (812) 725-1660." />
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +25,7 @@
       <a href="our-home.html">Our Home</a>
       <a href="care.html">Life with Renewity</a>
       <a href="blog.html">Blog</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <div class="flex items-center gap-3">
       <a href="tel:8127251660" class="btn btn-primary hidden md:inline-flex">(812) 725-1660</a>
@@ -45,19 +45,19 @@
 <!-- PAGE HERO -->
 <section class="relative pt-44 pb-16 md:pt-52 md:pb-20 px-6 md:px-12 overflow-hidden">
   <div class="absolute inset-0">
-    <img src="https://images.unsplash.com/photo-1559234938-b60fff04894d?w=2000&q=75&fit=crop&auto=format" alt="" class="w-full h-full object-cover" />
+    <img src="assets/photos/exterior-1.jpg" alt="" class="w-full h-full object-cover" />
     <div class="absolute inset-0" style="background:rgba(246,250,254,.55);"></div>
   </div>
   <div class="relative z-10 max-w-[1280px] mx-auto reveal">
-    <p class="eyebrow">Contact</p>
-    <h1 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2.2rem,5vw,4rem);max-width:16ch;">Got questions? Contact us!</h1>
+    <p class="eyebrow">Schedule a Tour</p>
+    <h1 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2.2rem,5vw,4rem);max-width:16ch;">Let's find a time that works.</h1>
     <p class="mt-6 max-w-xl leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
-      Brand-new, all-inclusive senior living, redefined — with short-term stays also available. Reach out any time.
+      Fill out this form and our team will reach out personally to set up your visit — no pressure, no scripts.
     </p>
   </div>
 </section>
 
-<!-- CONTACT GRID -->
+<!-- FORM GRID -->
 <section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);">
   <div class="max-w-[1280px] mx-auto grid md:grid-cols-12 gap-12">
 
@@ -89,15 +89,23 @@
           <input type="tel" id="phone" name="phone" required />
         </div>
         <div class="field">
-          <label for="comments">Comments<span style="color:var(--blue);">*</span></label>
-          <textarea id="comments" name="comments" maxlength="600" placeholder="Please let us know what's on your mind. Have a question for us? Ask away." required></textarea>
+          <label for="timeline">Preferred Timeline</label>
+          <select id="timeline" name="timeline">
+            <option>As soon as possible</option>
+            <option>Within a few weeks</option>
+            <option>Just exploring options</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="comments">Comments</label>
+          <textarea id="comments" name="comments" maxlength="600" placeholder="Tell us a bit about your loved one and any preferred days or times for a visit." required></textarea>
           <p id="comments-count" class="field-hint">0 of 600 max characters</p>
         </div>
         <div class="field-hint" style="border:1px dashed rgba(16,32,48,.25);border-radius:10px;padding:.9em 1em;">
           reCAPTCHA verification will go here once the form is connected to a live inbox.
         </div>
-        <button type="submit" class="btn btn-primary w-full sm:w-auto">Send Message</button>
-        <p class="text-xs" style="color:var(--ink-faint);">A member of our team will follow up personally — no bots, no call centers. Ready to visit? <a href="schedule-tour.html" style="color:var(--blue-deep);font-weight:600;">Schedule a Tour</a>.</p>
+        <button type="submit" class="btn btn-primary w-full sm:w-auto">Request My Tour</button>
+        <p class="text-xs" style="color:var(--ink-faint);">A member of our team will follow up personally — no bots, no call centers. Just have a general question instead? <a href="contact.html" style="color:var(--blue-deep);font-weight:600;">Contact us</a>.</p>
       </form>
     </div>
 
