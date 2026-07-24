@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const time = t / 1000;
       const rx = (-my * maxTilt).toFixed(2);
       const ry = (mx * maxTilt).toFixed(2);
-      tiltCards.forEach((el, i) => {
-        const floatY = Math.sin(time * 0.6 + i * 0.7) * floatAmp;
+      const floatY = Math.sin(time * 0.6) * floatAmp;
+      tiltCards.forEach((el) => {
         el.style.transform = `translateY(${floatY.toFixed(2)}px) perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;
       });
       requestAnimationFrame(loop);
