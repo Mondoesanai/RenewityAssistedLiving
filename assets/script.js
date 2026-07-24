@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = parseFloat(el.dataset.count);
       const suffix = el.dataset.suffix || '';
       const prefix = el.dataset.prefix || '';
-      const dur = 1200;
+      const dur = 2600;
       const start = performance.now();
       const tick = (now) => {
         const p = Math.min((now - start) / dur, 1);
@@ -66,6 +66,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.5 });
   counters.forEach(el => countIO.observe(el));
+
+  /* subtle mouse-follow tilt for home page cards + the recognition badge */
+  const tiltEls = document.querySelectorAll('.tilt-target');
+  if (tiltEls.length && window.matchMedia('(hover: hover)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const maxTilt = 5;
+    window.addEventListener('mousemove', (e) => {
+      const dx = (e.clientX / window.innerWidth) * 2 - 1;
+      const dy = (e.clientY / window.innerHeight) * 2 - 1;
+      tiltEls.forEach(el => {
+        el.style.transform = `perspective(900px) rotateX(${(-dy * maxTilt).toFixed(2)}deg) rotateY(${(dx * maxTilt).toFixed(2)}deg)`;
+      });
+    }, { passive: true });
+  }
 
   /* accordion (FAQ) */
   document.querySelectorAll('.acc-head').forEach(head => {

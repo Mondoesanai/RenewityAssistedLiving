@@ -17,7 +17,7 @@
 <header id="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-mark">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5" /><path d="M6 10v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-9" /><path d="M12 12.5c-1.4 0-2.4 1-2.4 2.3 0 1.7 2.4 3.2 2.4 3.2s2.4-1.5 2.4-3.2c0-1.3-1-2.3-2.4-2.3Z" /></svg>
+      <img src="assets/logo.png" alt="Renewity logo" class="logo-mark" />
       <span class="word">Renewity<small>Residential Care Home</small></span>
     </a>
     <nav class="nav-links">
@@ -45,7 +45,7 @@
 <!-- HERO -->
 <section class="relative min-h-screen flex items-end overflow-hidden">
   <div class="absolute inset-0">
-    <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1714836982299-7a3b6930e2f5?w=2000&q=80&fit=crop&auto=format" class="w-full h-full object-cover">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" class="w-full h-full object-cover">
       <source src="assets/hero-video.mp4" type="video/mp4" />
     </video>
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.45) 0%,rgba(14,27,41,.25) 40%,rgba(14,27,41,.86) 100%);"></div>
@@ -64,12 +64,6 @@
       <a href="contact.html" class="btn btn-primary">Schedule a Tour</a>
       <a href="realtor-partners.html" class="text-sm font-semibold" style="color:rgba(246,250,254,.85);border-bottom:1px solid rgba(246,250,254,.4);padding-bottom:2px;">Realtor Information</a>
       <a href="care.html#memory-care" class="text-sm font-semibold" style="color:rgba(246,250,254,.85);border-bottom:1px solid rgba(246,250,254,.4);padding-bottom:2px;">Ask About Memory Care</a>
-    </div>
-    <div class="reveal d3 mt-10">
-      <div class="award-seal-wrap on-dark">
-        <img src="assets/badge-assisted-living-magazine.png" alt="Best in Senior Living — Assisted Living Magazine award badge" class="award-seal" />
-        <p class="award-seal-text">Recognized by<strong>Assisted Living Magazine</strong></p>
-      </div>
     </div>
   </div>
 </section>
@@ -96,7 +90,9 @@
 <section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);">
   <div class="max-w-[1280px] mx-auto grid md:grid-cols-12 gap-12 items-center">
     <div class="md:col-span-5 reveal">
-      <img src="https://images.unsplash.com/photo-1569508926450-cd832544c4ae?w=900&q=80&fit=crop&auto=format" alt="A caregiver's hand holding a resident's hand at Renewity" class="w-full aspect-[4/5] object-cover rounded-2xl" />
+      <div class="tilt-float">
+        <img src="https://images.unsplash.com/photo-1569508926450-cd832544c4ae?w=900&q=80&fit=crop&auto=format" alt="A caregiver's hand holding a resident's hand at Renewity" loading="lazy" decoding="async" class="tilt-target w-full aspect-[4/5] object-cover rounded-2xl" />
+      </div>
     </div>
     <div class="md:col-span-6 md:col-start-7 reveal d1">
       <p class="eyebrow">Our Mission</p>
@@ -115,30 +111,41 @@
 </section>
 
 <!-- WHY RENEWITY -->
-<section class="px-6 md:px-12" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);background:var(--cream-alt);">
+<section class="relative px-6 md:px-12 overflow-hidden" style="padding-top:var(--section-pad);padding-bottom:var(--section-pad);background:var(--paper);">
   <div class="max-w-[1280px] mx-auto">
-    <div class="mb-14 reveal max-w-2xl">
-      <p class="eyebrow">Why Renewity?</p>
-      <h2 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2rem,3.8vw,3.2rem);">A home-style ratio, not a facility-sized one.</h2>
-      <p class="mt-4 leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
-        Renewity maintains a resident-to-caregiver ratio of about 5:1. Compare that to the roughly 20:1 ratio common in larger, facility-based communities. That smaller number is the whole difference: personalized attention, stronger relationships, and caregivers who actually know your preferences and routines.
-      </p>
+    <div class="mb-14 reveal flex flex-wrap items-start justify-between gap-10">
+      <div class="max-w-2xl">
+        <p class="eyebrow">Why Renewity?</p>
+        <h2 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2rem,3.8vw,3.2rem);">A home-style ratio, not a facility-sized one.</h2>
+        <p class="mt-4 leading-relaxed" style="color:var(--ink-soft);font-size:1.05rem;">
+          Renewity maintains a resident-to-caregiver ratio of about 5:1. Compare that to the roughly 20:1 ratio common in larger, facility-based communities. That smaller number is the whole difference: personalized attention, stronger relationships, and caregivers who actually know your preferences and routines. It's an approach that's earned Renewity recognition from Assisted Living Magazine as Best in Senior Living.
+        </p>
+      </div>
+      <div class="badge-float shrink-0 hidden sm:block">
+        <img src="assets/badge-assisted-living-magazine.png" alt="Best in Senior Living — Assisted Living Magazine award badge" class="award-seal-lg tilt-target" />
+      </div>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="service-card card-lift reveal">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M2 20c0-3.3 2.8-5.5 7-5.5s7 2.2 7 5.5"/></svg></div>
-        <h3>Personalized Attention</h3>
-        <p>A low ratio means caregivers have real time with each resident — not a checklist rushed between rooms.</p>
+      <div class="tilt-float ft1 reveal">
+        <div class="service-card tilt-target">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M2 20c0-3.3 2.8-5.5 7-5.5s7 2.2 7 5.5"/></svg></div>
+          <h3>Personalized Attention</h3>
+          <p>A low ratio means caregivers have real time with each resident — not a checklist rushed between rooms.</p>
+        </div>
       </div>
-      <div class="service-card card-lift reveal d1">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg></div>
-        <h3>Daily Social &amp; Cognitive Support</h3>
-        <p>A diverse mix of daily activities builds social, emotional, and cognitive engagement, day after day.</p>
+      <div class="tilt-float ft2 reveal d1">
+        <div class="service-card tilt-target">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg></div>
+          <h3>Daily Social &amp; Cognitive Support</h3>
+          <p>A diverse mix of daily activities builds social, emotional, and cognitive engagement, day after day.</p>
+        </div>
       </div>
-      <div class="service-card card-lift reveal d2">
-        <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v12H7l-3 4V4Z"/></svg></div>
-        <h3>Transparent Family Communication</h3>
-        <p>We keep families informed about health and well-being — proactively, not just when something changes.</p>
+      <div class="tilt-float ft3 reveal d2">
+        <div class="service-card tilt-target">
+          <div class="icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v12H7l-3 4V4Z"/></svg></div>
+          <h3>Transparent Family Communication</h3>
+          <p>We keep families informed about health and well-being — proactively, not just when something changes.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -184,8 +191,8 @@
 <!-- OPEN FOR TOURS CTA -->
 <section class="relative px-6 md:px-12 py-24 md:py-32 overflow-hidden">
   <div class="absolute inset-0">
-    <img src="https://images.unsplash.com/photo-1549276755-1bbd36282c6f?w=1800&q=80&fit=crop&auto=format" alt="" class="w-full h-full object-cover" />
-    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.82),rgba(14,27,41,.78));"></div>
+    <img src="assets/photos/exterior-3.jpg" alt="" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.72),rgba(14,27,41,.68));"></div>
   </div>
   <div class="relative z-10 max-w-3xl mx-auto text-center reveal">
     <p class="eyebrow on-dark center justify-center">We Are Open for Tours</p>
@@ -206,25 +213,31 @@
       <h2 class="font-display font-semibold mt-6 leading-tight" style="font-size:clamp(2rem,3.8vw,3.2rem);">Dining, activities, and family — every day.</h2>
     </div>
     <div class="grid md:grid-cols-3 gap-6">
-      <div class="reveal art-frame rounded-2xl overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1569435998017-abb5d562dedf?w=700&q=80&fit=crop&auto=format" alt="Residents sharing a home-cooked meal at Renewity" class="w-full aspect-[4/3] object-cover" />
-        <div class="p-6 bg-white">
-          <h3 class="font-display font-semibold text-lg">Dining</h3>
-          <p class="mt-2 text-sm leading-relaxed" style="color:var(--ink-soft);">Delicious, home-cooked meals served in our bright, open dining room — prepared fresh around each resident's preferences and health needs.</p>
+      <div class="tilt-float ft1 reveal">
+        <div class="tilt-target rounded-2xl overflow-hidden" style="box-shadow:var(--shadow-soft);">
+          <img src="https://images.unsplash.com/photo-1569435998017-abb5d562dedf?w=700&q=80&fit=crop&auto=format" alt="Residents sharing a home-cooked meal at Renewity" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover" />
+          <div class="p-6 bg-white">
+            <h3 class="font-display font-semibold text-lg">Dining</h3>
+            <p class="mt-2 text-sm leading-relaxed" style="color:var(--ink-soft);">Delicious, home-cooked meals served in our bright, open dining room — prepared fresh around each resident's preferences and health needs.</p>
+          </div>
         </div>
       </div>
-      <div class="reveal d1 art-frame rounded-2xl overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1513159446162-54eb8bdaa79b?w=700&q=80&fit=crop&auto=format" alt="Residents enjoying an activity together at Renewity" class="w-full aspect-[4/3] object-cover" />
-        <div class="p-6 bg-white">
-          <h3 class="font-display font-semibold text-lg">Activities</h3>
-          <p class="mt-2 text-sm leading-relaxed" style="color:var(--ink-soft);">Games, music, crafts, and the Tovertafel&reg; interactive activity system — engaging programming tailored to our small community.</p>
+      <div class="tilt-float ft2 reveal d1">
+        <div class="tilt-target rounded-2xl overflow-hidden" style="box-shadow:var(--shadow-soft);">
+          <img src="https://images.unsplash.com/photo-1513159446162-54eb8bdaa79b?w=700&q=80&fit=crop&auto=format" alt="Residents enjoying an activity together at Renewity" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover" />
+          <div class="p-6 bg-white">
+            <h3 class="font-display font-semibold text-lg">Activities</h3>
+            <p class="mt-2 text-sm leading-relaxed" style="color:var(--ink-soft);">Games, music, crafts, and the Tovertafel&reg; interactive activity system — engaging programming tailored to our small community.</p>
+          </div>
         </div>
       </div>
-      <div class="reveal d2 art-frame rounded-2xl overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1612011453414-99e26bdf7d89?w=700&q=80&fit=crop&auto=format" alt="Family visiting a resident at Renewity" class="w-full aspect-[4/3] object-cover" />
-        <div class="p-6 bg-white">
-          <h3 class="font-display font-semibold text-lg">Family Access</h3>
-          <p class="mt-2 text-sm leading-relaxed" style="color:var(--ink-soft);">As a resident, Renewity is your home — so family is encouraged to visit often and join meals and daily activities.</p>
+      <div class="tilt-float ft3 reveal d2">
+        <div class="tilt-target rounded-2xl overflow-hidden" style="box-shadow:var(--shadow-soft);">
+          <img src="https://images.unsplash.com/photo-1758612899162-7f9abfc0d6a3?w=700&q=80&fit=crop&auto=format" alt="A grandparent playing with a grandchild" loading="lazy" decoding="async" class="w-full aspect-[4/3] object-cover" />
+          <div class="p-6 bg-white">
+            <h3 class="font-display font-semibold text-lg">Family Access</h3>
+            <p class="mt-2 text-sm leading-relaxed" style="color:var(--ink-soft);">As a resident, Renewity is your home — so family is encouraged to visit often and join meals and daily activities.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -243,15 +256,15 @@
     </div>
     <div class="grid md:grid-cols-3 gap-6">
       <a href="blog-facility-vs-home.html" class="blog-card card-lift reveal">
-        <div class="thumb"><img src="https://images.unsplash.com/photo-1559234938-b60fff04894d?w=700&q=80&fit=crop&auto=format" alt="" /></div>
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1559234938-b60fff04894d?w=700&q=80&fit=crop&auto=format" alt="" loading="lazy" decoding="async" /></div>
         <div class="body"><p class="tag">Choosing Care</p><h3>Facility vs. Home Assisted Living Services</h3><p>Why a 5:1 ratio changes everything compared to the ~20:1 average at larger communities.</p></div>
       </a>
       <a href="blog-renewity-difference.html" class="blog-card card-lift reveal d1">
-        <div class="thumb"><img src="https://images.unsplash.com/photo-1698933787134-af2d451985c7?w=700&q=80&fit=crop&auto=format" alt="" /></div>
+        <div class="thumb"><img src="assets/photos/common-room.jpg" alt="" loading="lazy" decoding="async" /></div>
         <div class="body"><p class="tag">Our Philosophy</p><h3>The Renewity Difference</h3><p>Why we built a 20-resident home instead of a much larger community.</p></div>
       </a>
       <a href="blog-connection-is-care.html" class="blog-card card-lift reveal d2">
-        <div class="thumb"><img src="https://images.unsplash.com/photo-1762955911431-4c44c7c3f408?w=700&q=80&fit=crop&auto=format" alt="" /></div>
+        <div class="thumb"><img src="https://images.unsplash.com/photo-1762955911431-4c44c7c3f408?w=700&q=80&fit=crop&auto=format" alt="" loading="lazy" decoding="async" /></div>
         <div class="body"><p class="tag">Wellness</p><h3>Connection Is Care at Renewity</h3><p>How daily social engagement supports brain health and emotional well-being.</p></div>
       </a>
     </div>
@@ -269,14 +282,17 @@
       </p>
       <p class="mt-6 text-sm font-semibold tracking-wide" style="color:var(--ink-faint);">— Family name, relationship</p>
     </div>
+    <a href="testimonials.html" class="inline-flex items-center gap-3 mt-8 group">
+      <span class="text-sm font-semibold tracking-wide" style="border-bottom:1px solid var(--blue);padding-bottom:2px;">Watch Family Testimonials</span>
+    </a>
   </div>
 </section>
 
 <!-- CTA -->
 <section class="relative px-6 md:px-12 py-28 md:py-36 overflow-hidden">
   <div class="absolute inset-0">
-    <img src="https://images.unsplash.com/photo-1714836982299-7a3b6930e2f5?w=1800&q=80&fit=crop&auto=format" alt="" class="w-full h-full object-cover" />
-    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.85),rgba(14,27,41,.8));"></div>
+    <img src="assets/photos/exterior-2.jpg" alt="" loading="lazy" decoding="async" class="w-full h-full object-cover" />
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(14,27,41,.75),rgba(14,27,41,.7));"></div>
   </div>
   <div class="relative z-10 max-w-2xl mx-auto text-center reveal">
     <p class="eyebrow on-dark center justify-center">Got Questions? Contact Us.</p>
@@ -307,6 +323,7 @@
         <li><a href="contact.html" style="opacity:.85;">Contact</a></li>
         <li><a href="realtor-partners.html" style="opacity:.85;">Realtor Information</a></li>
         <li><a href="care.html#memory-care" style="opacity:.85;">Memory Care</a></li>
+        <li><a href="testimonials.html" style="opacity:.85;">Testimonials</a></li>
       </ul>
     </div>
     <div class="md:col-span-3">
