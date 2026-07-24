@@ -67,23 +67,16 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.5 });
   counters.forEach(el => countIO.observe(el));
 
-  /* unified subtle tilt + float for every .tilt-card on the page */
+  /* unified subtle float for every .tilt-card on the page (no rotation —
+     keeps cards perfectly centered in their grid slot, just a gentle rise/fall) */
   const tiltCards = Array.from(document.querySelectorAll('.tilt-card'));
-  if (tiltCards.length && window.matchMedia('(hover: hover)').matches && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const maxTilt = 4;
+  if (tiltCards.length && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     const floatAmp = 4;
-    let mx = 0, my = 0;
-    window.addEventListener('mousemove', (e) => {
-      mx = (e.clientX / window.innerWidth) * 2 - 1;
-      my = (e.clientY / window.innerHeight) * 2 - 1;
-    }, { passive: true });
     const loop = (t) => {
       const time = t / 1000;
-      const rx = (-my * maxTilt).toFixed(2);
-      const ry = (mx * maxTilt).toFixed(2);
-      const floatY = Math.sin(time * 0.6) * floatAmp;
+      const floatY = (Math.sin(time * 0.6) * floatAmp).toFixed(2);
       tiltCards.forEach((el) => {
-        el.style.transform = `translateY(${floatY.toFixed(2)}px) perspective(900px) rotateX(${rx}deg) rotateY(${ry}deg)`;
+        el.style.transform = `translateY(${floatY}px)`;
       });
       requestAnimationFrame(loop);
     };
