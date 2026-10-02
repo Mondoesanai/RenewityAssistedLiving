@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://renewity-assisted-living.vercel.app/sitemap.xml
