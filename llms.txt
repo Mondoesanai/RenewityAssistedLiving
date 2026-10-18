@@ -1,0 +1,20 @@
+# Renewity Residential Care Home for Seniors
+
+> A home-style congregate care home (residential care home) for seniors in New Albany, Indiana — not a skilled nursing facility.
+
+Renewity provides non-medical, home-style assisted living and memory care for seniors in a residential setting. The home is located at 3755 St Joseph Road, New Albany, IN 47150, and serves New Albany, Floyd County, and the surrounding Southern Indiana area.
+
+Contact: (812) 725-1660 · michele@renewityassistedliving.com
+
+## Key Pages
+
+- [Home](https://renewity-assisted-living.vercel.app/index.html): Overview of Renewity Residential Care Home for Seniors.
+- [Our Home](https://renewity-assisted-living.vercel.app/our-home.html): Information about the residence itself.
+- [Life with Renewity / Care](https://renewity-assisted-living.vercel.app/care.html): Details on care services, including memory care.
+- [Blog](https://renewity-assisted-living.vercel.app/blog.html): Articles on senior care topics for New Albany families.
+- [Realtor Partners](https://renewity-assisted-living.vercel.app/realtor-partners.html): Information for realtors assisting with senior placement.
+- [Family FAQ](https://renewity-assisted-living.vercel.app/faq.html): Frequently asked questions from families.
+- [Testimonials](https://renewity-assisted-living.vercel.app/testimonials.html): Feedback from families and residents.
+- [Getting Started](https://renewity-assisted-living.vercel.app/getting-started.html): Guidance on starting the process with Renewity.
+- [Schedule a Tour](https://renewity-assisted-living.vercel.app/schedule-tour.html): Request a tour of the home.
+- [Contact](https://renewity-assisted-living.vercel.app/contact.html): Contact details and inquiry form.
